@@ -114,6 +114,7 @@
             <button
               class="hero-button"
               type="button"
+              data-modal-open
             >
               Замовити послугу
             </button>
@@ -870,10 +871,14 @@
       </div>
     </footer>
 
-    <!-- Backdrop -->
-    <div class="backdrop is-hidden">
+    <!-- Modal /Backdrop -->
+    <div class="backdrop is-hidden" data-modal>
       <div class="modal">
-        <button type="button" class="close-button">
+        <button
+          type="button"
+          class="close-btn-modal"
+          data-modal-close
+        >
           <svg
             class="close-modal-icon"
             width="18"
@@ -886,5 +891,7 @@
         </button>
       </div>
     </div>
+
+    <script src="./js/modal.js"></script>
   </body>
 </html>
